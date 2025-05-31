@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GabLay</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Leia-me quando quiser saber minhas fotos favoritas</h1>
+      <p>Um mosaico de momentos únicos com quem mais amo 💜</p>
+    </header>
+
+    <main class="gallery">
+      <div class="img-box" onclick="openModal(this)">
+        <img src="img/1.jpeg" alt="Foto 1" data-caption="Amor da minha vida" />
+      </div>
+      <div class="img-box" onclick="openModal(this)">
+        <img src="img/2.jpeg" alt="Foto 2" data-caption="Adorei seu cabelo pintado" />
+      </div>
+      <div class="img-box" onclick="openModal(this)">
+        <img src="img/3.jpeg" alt="Foto 3" data-caption="Você fica tão linda de vestido" />
+      </div>
+      <div class="img-box" onclick="openModal(this)">
+        <img src="img/4.jpeg" alt="Foto 4" data-caption="VOCÊ FALOU QUE NÃO DAVA PARA PERCEBER O BATOM 😭" />
+      </div>
+      <div class="img-box" onclick="openModal(this)">
+        <img src="img/5.jpeg" alt="Foto 5" data-caption="Sem perguntas" />
+      </div>
+      <div class="img-box" onclick="openModal(this)">
+        <img src="img/6.jpeg" alt="Foto 5" data-caption="KKKKKKKK😁😁" />
+      </div>
+      <div class="img-box" onclick="openModal(this)">
+        <img src="img/7.jpeg" alt="Foto 5" data-caption="Que delícia de bochecha" />
+      </div>
+      <div class="img-box" onclick="openModal(this)">
+        <img src="img/8.jpeg" alt="Foto 5" data-caption="Minha garota tão bonita" />
+      </div>
+      <div class="img-box" onclick="openModal(this)">
+        <img src="img/9.jpeg" alt="Foto 5" data-caption="Eu e minha princesa" />
+      </div>
+      <div class="img-box" onclick="openModal(this)">
+        <img src="img/10.jpeg" alt="Foto 5" data-caption="A minha foto favorita" />
+      </div>
+      <div class="img-box" onclick="openModal(this)">
+        <img src="img/11.jpeg" alt="Foto 5" data-caption="Lindos e assustadores" />
+      </div>
+      <div class="img-box" onclick="openModal(this)">
+        <img src="img/12.jpeg" alt="Foto 5" data-caption="Palhacinhos lindos, uma das minhas favoritas também" />
+      </div>
+      <div class="img-box" onclick="openModal(this)">
+        <img src="img/13.jpeg" alt="Foto 5" data-caption="Uma das mais antigas, fizemos remake dela depois" />
+      </div>
+      <!-- Adicione mais imagens aqui -->
+    </main>
+
+    <div id="modal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modal-img" />
+      <div id="caption" class="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
